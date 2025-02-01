@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumagem - Sua Loja de Moda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e6001f5d;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            animation: colorChange 4s infinite linear;
+        }
+
+        @keyframes colorChange {
+            from {
+                background-color: rgba(0, 108, 248, 0.39);
+            }
+            to {
+                background-color: #5700f834;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            cursor: pointer;
+        }
+
+        i.bi-list {
+            font-size: 2em;
+        } i.bi-list:hover {
+            color: #f80000;
+ }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav.show {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+           color: #004ff8;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+
+        .wrapper {
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        form {
+            background-image: url("f3c5ef47-3ab3-4e69-b1a0-8c127be22092.jpg");
+            background-position: 20%;
+            width: 320px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(153, 70, 70, 0.1);
+            position: relative;
+    
+        }
+
+        form h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-style: groove;
+            margin: 20px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+            color: purple;
+            font-size: 16px;
+            outline: none;
+            padding: 10px;
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .register-link {
+            color: #333;
+            text-align: center;
+            margin-top: 204px;
+            font-size: 15px;
+ }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>PLUMAGEM</h1>
+    <i class="bi bi-list" onclick="toggleNav()"></i>
+</header>
+<nav>
+    <ul>
+        <li><a href="pagina-1.html"><i class="bi bi-house"></i>Home</a></li>
+        <li><a href="pagina-2.html"><i class="bi bi-person"></i>Login</a></li>
+        <a href="pagina-3html.html"><i class="bi bi-telephone">Contado</i></a>
+    </ul>
+</nav>
+
+<script>
+    function toggleNav() {
+        document.querySelector('nav').classList.toggle('show');
+    }
+</script>
+<div class="wrapper">
+    <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+            <i class="bi bi-person-circle"></i>
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <i class="bi bi-lock-fill"></i>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="remember-forgat">
+            <label><input type="checkbox"> Salva senha</label>
+        </div>
+        <div class="register-link">
+            <a href="pagina-1.html">continuar</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+<p>&copy; 2023 Plumagem. Todos os direitos reservados.</p>
+<style>
+    p {
+        background-color: #333;
+        color: rgba(255, 255, 255, 0.774);
+        text-align: center;
+        padding: 10px;
+        flex-grow: 1;
+    }
+</style>

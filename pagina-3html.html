@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumagem - Sua Loja de Moda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000cb;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        i.bi-list {
+            font-size: 2em;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        i.bi-list:hover {
+            color: #f80000;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav.show {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+           color: #004ff8;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #333;
+            color: rgba(255, 255, 255, 0.774);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            width: 40%;
+            height: auto;
+            margin-right: 19px;
+            border-radius: 8px;
+            border-style: unset;
+            border-radius: 60%;
+
+    
+        }
+        h3 {
+            width: 50%;
+            font-size: xx-large;
+            color: #f0f0f0;
+            transition: color 0.3s ease;
+
+        }
+
+      
+
+    
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PLUMAGEM</h1>
+        <i class="bi bi-list" onclick="toggleNav()"></i>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina-1.html"><i class="bi bi-house"></i>Home</a></li>
+            <li><a href="pagina-2.html"><i class="bi bi-person"></i>Login</a></li>
+            <li><a href="pagina-3html.html"><i class="bi bi-telephone"></i>Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="f3c5ef47-3ab3-4e69-b1a0-8c127be22092.jpg" >
+        <h3>A Impresa Plumagen é uma empresa dedicada à vanguarda da impressão, trazendo inovação e qualidade para todas as suas necessidades de materiais impressos. Nossa missão é transformar conceitos em realidade, oferecendo soluções de impressão que se destacam pela sua excelência e originalidade Para entrar em contato com a Impresa Plumagen
+            , utilize as seguintes informações:   Telefone: +55 (11) 55555-5555 
+            E-mail: contato@impresaplumagen.com.b
+        </h3>
+    </div>
+
+ 
+
+   
+
+    <footer>
+        <p>&copy; 2023 Plumagem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.querySelector('nav').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
